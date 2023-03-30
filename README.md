@@ -52,4 +52,4 @@ Re-enabling:<br>
 ``` cpp
 servos.begin(channels); //re-enable, should run once
 ```
-**IMPORTANT NOTE**: Avoid using these methods when using generic RF TX/RX on a plane or a copter!<br>
+**IMPORTANT NOTE**: Avoid using these methods when using generic OOK RX ISM modules on a plane or a copter!<br>
