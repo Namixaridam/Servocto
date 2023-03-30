@@ -50,5 +50,5 @@ servos.end(); //disable, should run once
 ```
 Re-enabling:<br>
 ``` cpp
-servos.begin(); //re-enable, should run once
+servos.begin(channels); //re-enable, should run once
 ```
