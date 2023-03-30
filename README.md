@@ -53,3 +53,8 @@ Re-enabling:<br>
 servos.begin(channels); //re-enable, should run once
 ```
 **IMPORTANT NOTE**: Avoid using these methods when using generic OOK RX ISM modules on a plane or a copter!<br>
+ 
+ 
+# Decoding the signals<br> 
+The servocto PPM decoder, fearturing an input glitch filtering for RF OOK receiving operations:
+![Decoder for Servocto](https://github.com/Namixaridam/Servocto/blob/main/images/nanoRF.jpg)<br>
