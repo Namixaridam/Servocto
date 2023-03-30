@@ -17,7 +17,7 @@ The duty cycle of a servomotor usually ranges from 1000µs to 2000µs.<br>
 If your application uses less than 6 channels, you are allowed to output from 500µs to 2200µs on all of them<br>
 but if you are using more than 6 channels, every channel's minima and maxima will be limited to 1000µs and 2000µs respectively except for channel 1<br>
 which makes it perfect for connecting throttle servo (gas engine) or an Electronic Speed Controller (ESC for short). <br>
-![Servomotor timing diagram, from M.E.C. Technical Note](https://github.com/Namixaridam/Servocto/blob/main/MadaTek_Servocto/images/servo.png)<br>
+![Servomotor timing diagram, from M.E.C. Technical Note](https://github.com/Namixaridam/Servocto/blob/main/images/servo.png)<br>
 Writing to the servos can be done anywhere in the code after initialization:
 ``` cpp
 servos.writeMicros(channel_number, duty_cycle);
