@@ -32,7 +32,7 @@ servos.writeAngle(channel_number, angle);
 ```
 
 ## Disabling all eight PWM outputs<br> 
-In some cases, you may want to disconnect your servos (thus not providing any feedback force to counter any unwanted movement). Disabling the PWM outputs to the servos or ESCs can help you to save some power since the motors are not powered, this is how it can be done:<br>
+In some cases, you may want to disconnect your servos (ie. The servos aren't energized and their shafts can rotate freely). Disabling the PWM outputs to the servos or ESCs can help you to save some power since the motors are not powered, this is how it can be done:<br>
    **Disabling the output**<br>
 ``` cpp
 servos.noOutput(true);
