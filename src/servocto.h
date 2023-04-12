@@ -17,7 +17,7 @@ class servocto
     //no voltage output
     bool noOutput(bool state);
     //inverts a signal
-    void invert(bool inverting);
+    bool invert(bool inverting);
     //write in degrees
     void writeAngle(uint8_t servo, uint8_t angle);
     //write in microseconds
