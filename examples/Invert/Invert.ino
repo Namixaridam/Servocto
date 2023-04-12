@@ -13,16 +13,16 @@ bool inversion = 0;
 servocto servos;
 void setup()
 {
-//initialize the servos
-  servos.begin(channels);
+	//initialize the servos
+	servos.begin(channels);
 }
 
 
 void loop()
 {
 	// put your main code here, to run repeatedly:
-  //Inverts PPM signal
-  servos.invert(inversion);
-  inversion != inversion;
-  delay(5000);
+  	//Inverts PPM signal
+  	servos.invert(inversion);
+	inversion = inversion ^ 1;
+  	delay(5000);
 }
