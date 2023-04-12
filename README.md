@@ -31,9 +31,10 @@ Analog servomotors have a range of 180 degrees, again the command can be used an
 servos.writeAngle(channel_number, angle);
 ```
 ## Inverting the output signal
-  Depending on your configuration, you may want to invert the polarity of the signal, it can be easily done by adding:
+  Depending on your configuration, you may want to invert the polarity of the signal (ie not the servocto hardware), it can be easily done by adding:
 ``` cpp
-servos.invert(true); 
+//inverting is true by default
+servos.invert(false); 
 ```
 
 ## Disabling all eight PWM outputs<br> 
