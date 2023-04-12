@@ -15,6 +15,7 @@ servocto	KEYWORD1
 writeMicros 	KEYWORD2
 writeAngle	KEYWORD2
 noOutput	KEYWORD2
+invert  KEYWORD2
 
 
 #######################################
