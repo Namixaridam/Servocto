@@ -19,8 +19,7 @@ void setup()
 
 void loop()
 {
-	// put your main code here, to run repeatedly:
-//writes a random angle to the servos
+  //writes a random angle to the servos
   for (int i = 1; i <= channels; i++)
   {
     angle = random(0, 180);
