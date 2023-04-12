@@ -107,3 +107,11 @@ bool servocto::noOutput(bool state)
 	else OCR1A = 50;
 	return state;
 }
+
+bool servocto::invert(bool invert)
+{
+	cli();
+  	TCCR1A = (1 << COM1A1) | (invert << COM1A0) | (0 << COM1B1) | (0 << COM1B0) | (1 << WGM11) | (0 << WGM10);
+  	sei();
+}
+	
