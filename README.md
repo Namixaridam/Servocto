@@ -30,6 +30,11 @@ Analog servomotors have a range of 180 degrees, again the command can be used an
 ``` cpp
 servos.writeAngle(channel_number, angle);
 ```
+## Inverting the output signal
+  Depending on your configuration, you may want to invert the polarity of the signal, it can be easily done by adding:
+``` cpp
+servos.invert(true); 
+```
 
 ## Disabling all eight PWM outputs<br> 
 In some cases, you may want to disconnect your servos (ie. The servos aren't energized and their shafts can rotate freely). Disabling the PWM outputs to the servos or ESCs can help you to save some power since the motors are not powered, this is how it can be done:<br>
