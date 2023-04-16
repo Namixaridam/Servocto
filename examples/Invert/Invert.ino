@@ -21,8 +21,9 @@ void setup()
 void loop()
 {
 	// put your main code here, to run repeatedly:
-  	//Inverts PPM signal
+  	//Inverts PPM signal 
   	servos.invert(inversion);
 	inversion = inversion ^ 1;
-  	delay(5000);
+  	//every 5s just to show the difference
+	delay(5000); 
 }
