@@ -74,7 +74,7 @@ void servocto::writeAngle(uint8_t servo, uint8_t angle)
 	if (servo < 1) servo = 1;
 	if (angle > 180) angle = 180;
 	if (angle < 0) angle = 0;
-	val_servos[servo - 1] = (angle * (250/180)) + 250;
+	val_servos[servo - 1] = (angle * (250/180)) + 250 + (angle / 2);
 }
 
 void servocto::writeMicros(uint8_t servo, int microseconds)
