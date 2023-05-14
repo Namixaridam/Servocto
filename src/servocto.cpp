@@ -83,6 +83,10 @@ void servocto::writeMicros(uint8_t servo, int microseconds)
   	if (servo < 1) servo = 1;
   	if(num_servos <= 6) //6 channels or less to get full extent
   	{
+		/*
+		500µs and 2200µs may not seem to be symetrical but 2200µs is truly the (mechanical)
+		limit on some servomotor that I have tested
+		*/
 		if (microseconds > 2200) microseconds = 2200;
 		if (microseconds < 500) microseconds = 500;
   	}
