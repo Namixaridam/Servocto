@@ -14,6 +14,7 @@ void setup()
 {
 //initialize the servos
   servos.begin(channels);
+  servos.invert(false);
 }
 
 
