@@ -119,4 +119,7 @@ bool servocto::invert(bool inverting)
   	TCCR1A = (1 << COM1A1) | (inverting << COM1A0) | (0 << COM1B1) | (0 << COM1B0) | (1 << WGM11) | (0 << WGM10);
   	sei();
 }
-#endif
+#else
+  #error atmega328-based boards only
+#endif 
+
