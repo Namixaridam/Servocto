@@ -61,5 +61,5 @@ servos.begin(channels); //re-enable, should run once
  
  
 # Decoding the signals<br> 
-The servocto PPM decoder, featuring an input glitch filtering for RF OOK receiving operations:
+The servocto decoder, featuring an input glitch filtering for RF OOK receiving operations:
 ![Decoder for Servocto](https://github.com/Namixaridam/Servocto/blob/main/images/nanoRF.jpg)<br>
